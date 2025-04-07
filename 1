@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agencia de Marketing Digital</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            line-height: 1.6;
+        }
+        .hero-section {
+            background: linear-gradient(135deg, #6366F1 0%, #3B82F6 100%);
+            min-height: 500px;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #6366F1, #3B82F6);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navegación -->
+    <nav class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="font-bold text-2xl text-indigo-600">MarketingPro</div>
+            <div class="hidden md:flex space-x-10">
+                <a href="#inicio" class="text-gray-600 hover:text-indigo-600 transition duration-300">Inicio</a>
+                <a href="#servicios" class="text-gray-600 hover:text-indigo-600 transition duration-300">Servicios</a>
+                <a href="#nosotros" class="text-gray-600 hover:text-indigo-600 transition duration-300">Nosotros</a>
+                <a href="#contacto" class="text-gray-600 hover:text-indigo-600 transition duration-300">Contacto</a>
+            </div>
+            <div class="md:hidden">
+                <button class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero-section flex items-center justify-center pt-24">
+        <div class="container mx-auto px-6 py-16 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb-4">Impulsa tu Negocio con Marketing Digital</h1>
+            <p class="text-xl text-white opacity-90 mb-8">Estrategias personalizadas para maximizar tu presencia online y aumentar tus ventas</p>
+            <button class="bg-white text-indigo-600 font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition duration-300 shadow-lg">
+                ¡Comienza Ahora!
+            </button>
+        </div>
+    </section>
+
+    <!-- Sección de Servicios -->
+    <section id="servicios" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-2">Nuestros Servicios</h2>
+            <p class="text-gray-600 text-center mb-16 max-w-3xl mx-auto">Ofrecemos soluciones integrales de marketing digital adaptadas a tus necesidades específicas</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <!-- Servicio 1 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500 hover:bg-indigo-50">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-search text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">SEO y Posicionamiento Web</h3>
+                    <p class="text-gray-600 mb-4">Mejora tu visibilidad en los motores de búsqueda y aumenta el tráfico orgánico a tu sitio web.</p>
+                    <a href="#" class="text-indigo-600 font-bold hover:underline">Saber más →</a>
+                </div>
+                
+                <!-- Servicio 2 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500 hover:bg-indigo-50">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullhorn text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Publicidad en Redes Sociales</h3>
+                    <p class="text-gray-600 mb-4">Campañas publicitarias efectivas en Facebook, Instagram, LinkedIn y más para llegar a tu audiencia ideal.</p>
+                    <a href="#" class="text-indigo-600 font-bold hover:underline">Saber más →</a>
+                </div>
+                
+                <!-- Servicio 3 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500 hover:bg-indigo-50">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-envelope text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Email Marketing</h3>
+                    <p class="text-gray-600 mb-4">Mantén el contacto con tus clientes y genera nuevas ventas mediante campañas de email efectivas.</p>
+                    <a href="#" class="text-indigo-600 font-bold hover:underline">Saber más →</a>
+                </div>
+                
+                <!-- Servicio 4 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500 hover:bg-indigo-50">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-desktop text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Diseño Web</h3>
+                    <p class="text-gray-600 mb-4">Creamos sitios web atractivos, responsivos y optimizados para convertir visitantes en clientes.</p>
+                    <a href="#" class="text-indigo-600 font-bold hover:underline">Saber más →</a>
+                </div>
+                
+                <!-- Servicio 5 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500 hover:bg-indigo-50">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Análisis y Reportes</h3>
+                    <p class="text-gray-600 mb-4">Monitoreamos y analizamos el rendimiento de tus campañas para optimizar resultados.</p>
+                    <a href="#" class="text-indigo-600 font-bold hover:underline">Saber más →</a>
+                </div>
+                
+                <!-- Servicio 6 -->
+                <div class="service-card bg-white rounded-lg shadow-lg p-8 transition duration-500 hover:bg-indigo-50">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-pencil-alt text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Content Marketing</h3>
+                    <p class="text-gray-600 mb-4">Desarrollamos estrategias de contenido que atraen, educan y convierten a tu audiencia objetivo.</p>
+                    <a href="#" class="text-indigo-600 font-bold hover:underline">Saber más →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros -->
+    <section id="nosotros" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Sobre Nosotros</h2>
+                    <h3 class="text-2xl gradient-text font-bold mb-4">Transformamos negocios a través del marketing digital</h3>
+                    <p class="text-gray-600 mb-6">En <strong>MarketingPro</strong>, nos apasiona ayudar a las empresas a alcanzar su máximo potencial en el entorno digital. Con más de 10 años de experiencia en el sector, nuestro equipo de expertos combina conocimientos técnicos con creatividad para desarrollar estrategias personalizadas que generan resultados tangibles.</p>
+                    <p class="text-gray-600 mb-8">Trabajamos con empresas de todos los tamaños, desde startups hasta grandes corporaciones, en una amplia variedad de industrias. Nuestro enfoque se basa en entender a fondo tu negocio, tus objetivos y tu público objetivo para crear soluciones que realmente funcionen.</p>
+                    <div class="flex space-x-4">
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold text-indigo-600">200+</span>
+                            <span class="text-gray-600">Clientes satisfechos</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold text-indigo-600">500+</span>
+                            <span class="text-gray-600">Proyectos completados</span>
+                        </div>
+                        <div class="flex flex-col items-center">
+                            <span class="text-3xl font-bold text-indigo-600">15+</span>
+                            <span class="text-gray-600">Expertos en equipo</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/2 lg:pl-16">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-4">Nuestros Valores</h3>
+                        <ul class="space-y-4">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Innovación</h4>
+                                    <p class="text-gray-600">Nos mantenemos a la vanguardia de las tendencias y tecnologías del marketing digital.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Transparencia</h4>
+                                    <p class="text-gray-600">Comunicación clara y reportes detallados sobre el progreso y resultados de tus campañas.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Orientación a resultados</h4>
+                                    <p class="text-gray-600">Nos enfocamos en estrategias que generan ROI medible y tangible para tu negocio.</p>
+                                </div>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 mt-1 mr-3"></i>
+                                <div>
+                                    <h4 class="font-bold">Colaboración</h4>
+                                    <p class="text-gray-600">Trabajamos en estrecha colaboración contigo para asegurar que todas las estrategias estén alineadas con tus objetivos.</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonios -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16">Lo Que Dicen Nuestros Clientes</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-indigo-600"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Laura Martínez</h4>
+                            <p class="text-gray-600">Directora de Marketing, TechSolutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Desde que comenzamos a trabajar con MarketingPro, nuestro tráfico web ha aumentado un 200% y las conversiones un 85%. Su equipo realmente entiende nuestras necesidades y ha creado estrategias que se alinean perfectamente con nuestros objetivos de negocio."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 2 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-indigo-600"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Carlos Rodríguez</h4>
+                            <p class="text-gray-600">CEO, Moda Express</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"La campaña de redes sociales que MarketingPro diseñó para nuestro lanzamiento superó todas nuestras expectativas. No solo alcanzamos nuestras metas de ventas, sino que también construimos una comunidad comprometida alrededor de nuestra marca."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonio 3 -->
+                <div class="bg-gray-50 p-8 rounded-lg shadow-md">
+                    <div class="flex items-center mb-4">
+                        <div class="mr-4">
+                            <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center">
+                                <i class="fas fa-user text-indigo-600"></i>
+                            </div>
+                        </div>
+                        <div>
+                            <h4 class="font-bold">Ana Gómez</h4>
+                            <p class="text-gray-600">Fundadora, Eco Lifestyle</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">"Como startup con presupuesto limitado, necesitábamos soluciones efectivas y asequibles. El equipo de MarketingPro entendió perfectamente esta situación y desarrolló una estrategia que maximizó nuestro ROI desde el primer mes."</p>
+                    <div class="mt-4 text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Contacto -->
+    <section id="contacto" class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-12 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para impulsar tu negocio?</h2>
+                    <p class="text-gray-600 mb-8">Contáctanos hoy mismo para discutir cómo podemos ayudarte a alcanzar tus objetivos de marketing. Ofrecemos consultas gratuitas para analizar tu situación actual y proponerte soluciones personalizadas.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="mr-4 bg-indigo-100 p-3 rounded-full">
+                                <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Dirección</h4>
+                                <p class="text-gray-600">Av. Insurgentes Sur 1234, Col. Del Valle, CDMX, México</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mr-4 bg-indigo-100 p-3 rounded-full">
+                                <i class="fas fa-phone text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Teléfono</h4>
+                                <p class="text-gray-600">+52 (55) 1234 5678</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="mr-4 bg-indigo-100 p-3 rounded-full">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">Email</h4>
+                                <p class="text-gray-600">info@marketingpro.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold mb-4">Síguenos en redes sociales</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white hover:bg-indigo-700 transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white hover:bg-indigo-700 transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white hover:bg-indigo-700 transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-indigo-600 rounded-full flex items-center justify-center text-white hover:bg-indigo-700 transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 lg:pl-16">
+                    <div class="bg-white p-8 rounded-lg shadow-lg">
+                        <h3 class="text-2xl font-bold mb-6">Envíanos un mensaje</h3>
+                        <form action="#" method="POST">
+                            <div class="mb-6">
+                                <label for="nombre" class="block text-gray-700 font-bold mb-2">Nombre completo</label>
+                                <input type="text" id="nombre" name="nombre" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Tu nombre" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="email" class="block text-gray-700 font-bold mb-2">Email</label>
+                                <input type="email" id="email" name="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" placeholder="tu@email.com" required>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="telefono" class="block text-gray-700 font-bold mb-2">Teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Tu número de teléfono">
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="servicio" class="block text-gray-700 font-bold mb-2">Servicio de interés</label>
+                                <select id="servicio" name="servicio" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500">
+                                    <option value="">Selecciona un servicio</option>
+                                    <option value="seo">SEO y Posicionamiento Web</option>
+                                    <option value="redes">Publicidad en Redes Sociales</option>
+                                    <option value="email">Email Marketing</option>
+                                    <option value="web">Diseño Web</option>
+                                    <option value="content">Content Marketing</option>
+                                    <option value="otro">Otro</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-6">
+                                <label for="mensaje" class="block text-gray-700 font-bold mb-2">Mensaje</label>
+                                <textarea id="mensaje" name="mensaje" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-indigo-500" placeholder="Cuéntanos sobre tu proyecto o consulta" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition duration-300">Enviar mensaje</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+                <div>
+                    <h4 class="text-xl font-bold mb-6">MarketingPro</h4>
+                    <p class="mb-4">Soluciones de marketing digital integrales para impulsar tu negocio en el mundo online.</p>
+                    <p>&copy; 2023 MarketingPro. Todos los derechos reservados.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Enlaces rápidos</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#inicio" class="hover:text-indigo-400 transition duration-300">Inicio</a></li>
+                        <li><a href="#servicios" class="hover:text-indigo-400 transition duration-300">Servicios</a></li>
+                        <li><a href="#nosotros" class="hover:text-indigo-400 transition duration-300">Nosotros</a></li>
+                        <li><a href="#contacto" class="hover:text-indigo-400 transition duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Servicios</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="hover:text-indigo-400 transition duration-300">SEO y Posicionamiento Web</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition duration-300">Publicidad en Redes Sociales</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition duration-300">Email Marketing</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition duration-300">Diseño Web</a></li>
+                        <li><a href="#" class="hover:text-indigo-400 transition duration-300">Content Marketing</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-6">Boletín informativo</h4>
+                    <p class="mb-4">Suscríbete para recibir las últimas noticias y consejos sobre marketing digital.</p>
+                    <form action="#" method="POST" class="flex">
+                        <input type="email" placeholder="Tu email" class="px-4 py-2 w-full rounded-l-lg focus:outline-none" required>
+                        <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded-r-lg hover:bg-indigo-700 transition duration-300">
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
